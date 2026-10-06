@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
 //Routes by LRG
 Route::get('/consultas/area-teacher',[ConsultasController::class, 'consultasAreaTeacher']);
 Route::get('/consultas/teacher-area',[ConsultasController::class, 'consultasTeacherArea']);
